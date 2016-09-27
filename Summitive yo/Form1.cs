@@ -23,7 +23,7 @@ namespace Summitive_yo
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
+        {//
 
             Graphics formGraphics = this.CreateGraphics();
             Pen drawPen = new Pen(Color.Silver, 5);
