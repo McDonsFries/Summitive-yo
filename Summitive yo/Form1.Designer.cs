@@ -49,7 +49,7 @@
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.Controls.Add(this.startButton);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "horoscopeSummative";
             this.ResumeLayout(false);
 
         }
