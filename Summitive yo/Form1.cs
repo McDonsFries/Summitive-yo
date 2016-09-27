@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using System.Media;
 
 namespace Summitive_yo
 {
@@ -23,10 +24,10 @@ namespace Summitive_yo
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {////
+        {
 
             Graphics formGraphics = this.CreateGraphics();
-            Pen drawPen = new Pen(Color.Silver, 5);
+            Pen drawPen = new Pen(Color.White, 5);
             SolidBrush starBrush = new SolidBrush(Color.Gold);
             SolidBrush drawBrush = new SolidBrush(Color.White);
             Font drawFont = new Font("Times New Roman", 20, FontStyle.Bold);
@@ -34,13 +35,18 @@ namespace Summitive_yo
 
             startButton.Hide();
 
+            Thread.Sleep(1000);
+
             formGraphics.Clear(Color.Black);
 
             formGraphics.DrawString("The Zodiac Cancer", drawFont, drawBrush, 25, 100);
 
             Thread.Sleep(2000);
 
-            formGraphics.Clear(Color.Black);
+            formGraphics.Clear(Color.Black); //The 'stars' are created
+
+            SoundPlayer player = new SoundPlayer(Properties.Resources.rain);
+            player.Play();
 
             formGraphics.FillEllipse(drawBrush, 106, 19, 10, 10);
 
@@ -60,7 +66,7 @@ namespace Summitive_yo
 
             formGraphics.FillEllipse(drawBrush, 172, 192, 10, 10);
 
-            Thread.Sleep(1000);
+            Thread.Sleep(1000); //The lines alligning the 'stars' are made
 
             formGraphics.DrawLine(drawPen, 110, 25, 117, 88);
            
@@ -78,7 +84,7 @@ namespace Summitive_yo
 
             Thread.Sleep(1200);
 
-            formGraphics.Clear(Color.Black);
+            formGraphics.Clear(Color.Black); //Info about this specific zodiac sign
 
             formGraphics.DrawString("Cancer, the fourth sign of the zodiac, is all about home.", newFont, drawBrush, 0, 100);
             formGraphics.DrawString("Those born under this sign are 'roots' kinds of people,", newFont, drawBrush, 0, 110);

@@ -33,11 +33,11 @@
             // 
             // startButton
             // 
-            this.startButton.Location = new System.Drawing.Point(61, 76);
+            this.startButton.Location = new System.Drawing.Point(62, 165);
             this.startButton.Name = "startButton";
             this.startButton.Size = new System.Drawing.Size(165, 84);
             this.startButton.TabIndex = 0;
-            this.startButton.Text = "Click To Open Card";
+            this.startButton.Text = "Click To Read Horoscope";
             this.startButton.UseVisualStyleBackColor = true;
             this.startButton.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -45,6 +45,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Summitive_yo.Properties.Resources.cancer_n_shit;
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.Controls.Add(this.startButton);
             this.Name = "Form1";
