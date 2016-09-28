@@ -27,9 +27,10 @@ namespace Summitive_yo
         {
 
             Graphics formGraphics = this.CreateGraphics();
-            Pen drawPen = new Pen(Color.White, 5);
-            SolidBrush starBrush = new SolidBrush(Color.Gold);
+            Pen drawPen = new Pen(Color.Silver, 5);
             SolidBrush drawBrush = new SolidBrush(Color.White);
+            SolidBrush wordBrush = new SolidBrush(Color.Black);
+            SolidBrush starBrush = new SolidBrush(Color.Gold);
             Font drawFont = new Font("Times New Roman", 20, FontStyle.Bold);
             Font newFont = new Font("Times New Roman", 8, FontStyle.Bold);
 
@@ -37,7 +38,7 @@ namespace Summitive_yo
 
             Thread.Sleep(1000);
 
-            formGraphics.Clear(Color.Black);
+            formGraphics.Clear(Color.Navy);
 
             formGraphics.DrawString("The Zodiac Cancer", drawFont, drawBrush, 25, 100);
 
@@ -84,12 +85,30 @@ namespace Summitive_yo
 
             Thread.Sleep(1200);
 
-            formGraphics.Clear(Color.Black); //Info about this specific zodiac sign
+            formGraphics.Clear(Color.Silver); //Info about this specific zodiac sign
 
-            formGraphics.DrawString("Cancer, the fourth sign of the zodiac, is all about home.", newFont, drawBrush, 0, 100);
-            formGraphics.DrawString("Those born under this sign are 'roots' kinds of people,", newFont, drawBrush, 0, 110);
-            formGraphics.DrawString("and take great pleasure in the comforts of home and family.", newFont, drawBrush, 0, 120);
-            formGraphics.DrawString("Cancers are maternal, domestic and love to nurture others.", newFont, drawBrush, 0, 130);
+            formGraphics.FillEllipse(starBrush, 106, 19, 10, 10);
+
+            Thread.Sleep(500);
+
+            formGraphics.FillEllipse(starBrush, 113, 84, 10, 10);
+
+            Thread.Sleep(500);
+
+            formGraphics.FillEllipse(starBrush, 110, 113, 10, 10);
+
+            Thread.Sleep(500);
+
+            formGraphics.FillEllipse(starBrush, 80, 168, 10, 10);
+
+            Thread.Sleep(500);
+
+            formGraphics.FillEllipse(starBrush, 172, 192, 10, 10);
+
+            formGraphics.DrawString("Cancer, the fourth sign of the zodiac, is all about home.", newFont, wordBrush, 0, 100);
+            formGraphics.DrawString("Those born under this sign are 'roots' kinds of people,", newFont, wordBrush, 0, 110);
+            formGraphics.DrawString("and take great pleasure in the comforts of home and family.", newFont, wordBrush, 0, 120);
+            formGraphics.DrawString("Cancers are maternal, domestic and love to nurture others.", newFont, wordBrush, 0, 130);
 
             Thread.Sleep(5000);
             formGraphics.Clear(Color.Black);
