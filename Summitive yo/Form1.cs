@@ -31,7 +31,7 @@ namespace Summitive_yo
             SolidBrush drawBrush = new SolidBrush(Color.White);
             SolidBrush wordBrush = new SolidBrush(Color.Black);
             SolidBrush starBrush = new SolidBrush(Color.Gold);
-            Font drawFont = new Font("Times New Roman", 20, FontStyle.Bold);
+            Font drawFont = new Font("Arial", 20, FontStyle.Bold);
             Font newFont = new Font("Times New Roman", 8, FontStyle.Bold);
 
             startButton.Hide();
@@ -44,28 +44,55 @@ namespace Summitive_yo
 
             Thread.Sleep(2000);
 
-            formGraphics.Clear(Color.Black); //The 'stars' are created
-
-            SoundPlayer player = new SoundPlayer(Properties.Resources.rain);
-            player.Play();
+            formGraphics.Clear(Color.SlateGray); //The 'stars' are created
 
             formGraphics.FillEllipse(drawBrush, 106, 19, 10, 10);
+            SoundPlayer player = new SoundPlayer(Properties.Resources.beep);
+            player.Play();
+
+            Thread.Sleep(1000);
+
+            player.Stop();
 
             Thread.Sleep(1000);
 
             formGraphics.FillEllipse(drawBrush, 113, 84, 10, 10);
+            SoundPlayer playe = new SoundPlayer(Properties.Resources.beep);
+            player.Play();
+
+            Thread.Sleep(1000);
+
+            player.Stop();
 
             Thread.Sleep(1000);
 
             formGraphics.FillEllipse(drawBrush, 110, 113, 10, 10);
+            SoundPlayer players = new SoundPlayer(Properties.Resources.beep);
+            player.Play();
+
+            Thread.Sleep(1000);
+
+            player.Stop();
 
             Thread.Sleep(1000);
 
             formGraphics.FillEllipse(drawBrush, 80, 168, 10, 10);
+            SoundPlayer play = new SoundPlayer(Properties.Resources.beep);
+            player.Play();
+
+            Thread.Sleep(1000);
+
+            player.Stop();
 
             Thread.Sleep(1000);
 
             formGraphics.FillEllipse(drawBrush, 172, 192, 10, 10);
+            SoundPlayer playr = new SoundPlayer(Properties.Resources.beep);
+            player.Play();
+
+            Thread.Sleep(1000);
+
+            player.Stop();
 
             Thread.Sleep(1000); //The lines alligning the 'stars' are made
 
@@ -111,7 +138,7 @@ namespace Summitive_yo
             formGraphics.DrawString("Cancers are maternal, domestic and love to nurture others.", newFont, wordBrush, 0, 130);
 
             Thread.Sleep(5000);
-            formGraphics.Clear(Color.Black);
+            formGraphics.Clear(Color.Purple);
 
         }
     }

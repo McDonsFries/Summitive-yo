@@ -121,7 +121,7 @@
   <data name="rain" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Rain-SoundBible.com-176235038 (1).wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="cancer n shit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cancer n shit1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="beep" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bleep-SoundBible.com-1927126940.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

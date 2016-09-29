@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.startButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -45,9 +46,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Summitive_yo.Properties.Resources.cancer_n_shit;
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.Controls.Add(this.startButton);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "horoscopeSummative";
             this.ResumeLayout(false);
